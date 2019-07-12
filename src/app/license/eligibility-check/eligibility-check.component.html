@@ -1,0 +1,37 @@
+
+<mat-card>
+
+    <mat-card-title>
+      <div ngClass.gt-sm="card-title" ngClass.lt-md="card-title-mob">Licence Renewal Eligibility Check</div>
+    </mat-card-title>
+
+    <mat-card-content>
+
+      <app-guest-precheck *ngIf="showGuestPrecheck" 
+          [driverLicenseNumber]="currentUser.driverLicenseNumber || componentState?.driverLicenseNumber"
+          [trilliumNumber]="currentUser.trilliumNumber || componentState?.trilliumNumber"
+          [postCode]="currentUser.postalCode || componentState?.postalCode"
+          [dateOfBirth]="currentUser.dob || componentState?.dob"
+          (doPreCheck)="doPreCheck($event)"
+          (valueChanged)="driverFormChanged($event)"></app-guest-precheck>
+
+
+      <ng-container id="precheckMessage" *ngIf="precheckMessage">
+        <div ngClass.gt-sm="precheck-message" ngClass.lt-md="precheck-message-mob">{{precheckMessage.message}}</div>
+        <mat-list>
+
+          <mat-list-item *ngFor="let reason of precheckMessage.reasons">
+            <mat-icon mat-list-icon>check</mat-icon>
+            <h4 mat-line>{{reason.reasonDescription}}</h4>
+          </mat-list-item>
+
+        </mat-list>
+      </ng-container>
+
+      <app-questioner *ngIf="preEligible" (questionsSubmitted)="questionsSubmitted($event)"></app-questioner>
+
+
+    </mat-card-content>
+
+
+</mat-card>

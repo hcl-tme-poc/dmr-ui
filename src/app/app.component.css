@@ -1,0 +1,102 @@
+:host {
+    min-height: calc(100vh - 100px);
+}
+
+img#header-logo {
+    width: 218px;
+}
+
+img#footer-logo {
+    width: 102px;
+    height: 42px;
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+.header-title {
+    padding-left: 10px;
+}
+
+.menu-item {
+    font-family: OpenSans;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.header-subtitle {
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+.userName {
+    font-size: 12px;
+}
+
+mat-toolbar {
+    background-color: #0B6B41 !important;
+}
+
+.offline {
+    background-color: lightgray !important;
+}
+
+div.subheader {
+    height: 150px;
+    width: 100%;
+    background-color: #424242;
+    color: #ffffff;
+}
+
+.loggedin-user {
+    font-family: OpenSans;
+    font-size: 20px;
+    color: #ffffff;
+  }
+
+  .footer {
+    height: 75px;
+    color: #ffffff;
+    background-color: #404040;
+  }
+
+  .footer-menu-item {
+    font-family: OpenSans;
+    font-size: 16px;
+    color: #ffffff;
+  }
+
+  .footer-menu-item-mob {
+    font-family: OpenSans;
+    font-size: 12px;
+    color: #ffffff;
+  }
+
+  .franch {
+      padding-right: 20px;
+  }
+
+  .underline {
+    border-width: 0px;
+  }
+  
+  .HOME {
+    width: 61px;
+    height: 27px;
+    font-family: OpenSans;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #ffffff;
+  }
+  

@@ -1,0 +1,39 @@
+:host {
+    min-height: calc(100vh - 300px);
+}
+
+.text-header {
+    font-weight: bold;
+    min-width: 300px;
+}
+
+.header-row {
+    padding-top: 6px;
+}
+
+.text-data {
+    font-size: 16px;
+}
+
+mat-card {
+    max-width: 600px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 16px;
+    margin: 5px 0 5px 0;
+}
+
+.reason-description {
+    font-size: 16px;
+    margin: 5px 0 5px 0;
+}
+
+.eligibility-determination {
+    font-size: 18px;
+    color: #0288d1;
+}

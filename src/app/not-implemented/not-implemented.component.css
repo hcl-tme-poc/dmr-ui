@@ -1,0 +1,26 @@
+:host {
+    padding-top: 40px;
+    min-height: calc(100vh - 300px);
+}
+
+mat-card-title {
+    font-size: 22px;
+}
+
+mat-card-content {
+    padding-top: 20px;
+}
+
+mat-card-content > div {
+    font-size: 18px;
+}
+
+.mat-card:not([class*=mat-elevation-z]) {
+    box-shadow: 0 0px 0px -1px rgba(0,0,0,0), 
+                0 0px 0px 0 rgba(0,0,0,0), 
+                0 0px 0px 0 rgba(0,0,0,0);
+}
+.version {
+    padding-top: 60px;
+    font-size: 12px !important;
+}

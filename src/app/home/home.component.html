@@ -1,0 +1,166 @@
+<div fxShow fxHide.lt-md class="banner"></div>
+
+<div ngClass.gt-sm="page-content" ngClass.lt-md="page-content-mob" fxLayout="column" fxLayoutAlign="start start">
+
+  <div class="content-header">
+    <span fxShow fxHide.lt-md>Welcome to the </span>Ministry of Transportation
+  </div>
+
+  <div ngClass.gt-sm="content-sub-header" ngClass.lt-md="content-sub-header-mob">
+    Self Service Portal
+  </div>
+
+  <div class="content-sub-header-2" fxShow fxHide.lt-md>
+    Skip the service centre and complete many activities online.
+  </div>
+
+  <ng-container *ngIf="loginService?.currentUser?.firstName == 'Alex'">
+
+    <mat-divider></mat-divider>
+
+    <div class="notifications">NOTIFICATIONS</div>
+
+    <div class="time-to-renew">It’s time to renew your licence</div>
+
+    <div class="license-renew-date">
+      Your Drivers Licence will expire on <i>24 July 2019</i>. 
+      <a class="license-renew-date" routerLink="/license-eligibility">Please renew Your Licence</a>
+    </div>
+    <mat-divider></mat-divider>
+
+  </ng-container>
+
+  <div ngClass.gt-sm="get-started" ngClass.lt-md="get-started-mob">Get Started</div>
+
+  <div id="allOptionLinks" fxLayout="row wrap" fxLayoutAlign="start start" fxFlexFill>
+
+    <div routerLink="/license-eligibility" class="option-link" fxFlex="50px 0 200px;" fxLayout="row" fxLayoutAlign="start center">
+      <button mat-fab fxShow fxHide.lt-md>
+        <mat-icon>credit_card</mat-icon>
+      </button>
+      <button mat-mini-fab fxShow fxHide.gt-sm>
+        <mat-icon>credit_card</mat-icon>
+      </button>
+
+      <a ngClass.gt-sm="option-link-ancor" ngClass.lt-md="option-link-ancor-mob" fxFlexOffset="20px;">Renew your
+        Driver’s&nbsp;<br/>Licence</a>
+    </div>
+
+    <div routerLink="/registration" class="option-link" fxFlex="50px 0 200px;" fxLayout="row" fxLayoutAlign="start center">
+      <button mat-fab fxShow fxHide.lt-md></button>
+      <button mat-mini-fab fxShow fxHide.gt-sm></button>
+
+      <a ngClass.gt-sm="option-link-ancor" ngClass.lt-md="option-link-ancor-mob" fxFlexOffset="20px;">Renew licence
+        plate&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>sticker</a>
+    </div>
+
+    <div routerLink="/registration" class="option-link" fxFlex="50px 0 200px;" fxLayout="row" fxLayoutAlign="start center">
+      <button mat-fab fxShow fxHide.lt-md></button>
+      <button mat-mini-fab fxShow fxHide.gt-sm></button>
+      <a ngClass.gt-sm="option-link-ancor" ngClass.lt-md="option-link-ancor-mob" fxFlexOffset="20px;">Order a used
+        vehicle<br/>information package</a>
+    </div>
+
+    <div routerLink="/registration" class="option-link" fxFlex="50px 0 200px;" fxLayout="row" fxLayoutAlign="start center">
+      <button mat-fab fxShow fxHide.lt-md></button>
+      <button mat-mini-fab fxShow fxHide.gt-sm></button>
+      <a ngClass.gt-sm="option-link-ancor" ngClass.lt-md="option-link-ancor-mob" fxFlexOffset="20px;">Pay fines, fees,
+        and&nbsp;&nbsp;&nbsp;&nbsp;<br/>penalties</a>
+    </div>
+
+    <div routerLink="/registration" class="option-link" fxFlex="50px 0 200px;" fxLayout="row" fxLayoutAlign="start center">
+      <button mat-fab fxShow fxHide.lt-md></button>
+      <button mat-mini-fab fxShow fxHide.gt-sm></button>
+      <a ngClass.gt-sm="option-link-ancor" ngClass.lt-md="option-link-ancor-mob" fxFlexOffset="20px;">Order a driver
+        abstract</a>
+    </div>
+
+    <div routerLink="/registration" class="option-link" fxFlex="50px 0 200px;" fxLayout="row" fxLayoutAlign="start center">
+      <button mat-fab fxShow fxHide.lt-md></button>
+      <button mat-mini-fab fxShow fxHide.gt-sm></button>
+      <a ngClass.gt-sm="option-link-ancor" ngClass.lt-md="option-link-ancor-mob" fxFlexOffset="20px;">Order a vehicle
+        abstract</a>
+    </div>
+
+    <div routerLink="/registration" class="option-link" fxFlex="50px 0 200px;" fxLayout="row" fxLayoutAlign="start center">
+      <button mat-fab fxShow fxHide.lt-md></button>
+      <button mat-mini-fab fxShow fxHide.gt-sm></button>
+      <a ngClass.gt-sm="option-link-ancor" ngClass.lt-md="option-link-ancor-mob" fxFlexOffset="20px;">Order personalised
+      <br/>licence plate</a>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="how-it-works" fxShow fxHide.lt-md>
+<mat-carousel [autoplay]="true" interval="1000" color="accent" 
+  maxWidth="auto" proportion="50" slides="3" [loop]="false"
+  [hideArrows]="true" [hideIndicators]="false">
+
+  <mat-carousel-slide>
+      <div class="how-it-works-header">How it works</div>
+      <div class="how-it-works-sub-header">Renewing your Driver’s Licence</div>
+      <div class="reniew-criteria">You can renew your driver’s licence online if:</div>
+      <div class="renew-criteria-list">
+        You don’t need a new photo (you must take a new photo every 10 years)<br>
+        You have a full licence (G, M class) that isn’t cancelled, suspended, or expired for more than 12 months<br>
+        You have a combination class of G1M, G2M, GM1, GM2, M1 or M2 (only the full portion will be renewed online)<br>
+        You haven’t updated your address within the last 90 days<br>
+        You don’t need tests (vision, written, or road)<br>
+        You’re not removing a vision condition<br>
+        You have no new medical conditions that may prevent you from driving<br>
+        You don’t have outstanding fines<br>
+        <!--img mat-card-image src="assets/images/licence.png"-->
+        <br>
+        To renew online, you need:<br>
+        Your driver’s licence number<br>
+        the 7-digit trillium number found on your driver’s licence (e.g., *1234567*)<br>
+        Your postal code
+      </div>
+  </mat-carousel-slide>
+
+  <mat-carousel-slide>
+      <div class="how-it-works-header">How it works</div>
+      <div class="how-it-works-sub-header">Renewing your Driver’s Licence</div>
+      <div class="reniew-criteria">You can renew your driver’s licence online if:</div>
+      <div class="renew-criteria-list">
+        You don’t need a new photo (you must take a new photo every 10 years)<br>
+        You have a full licence (G, M class) that isn’t cancelled, suspended, or expired for more than 12 months<br>
+        You have a combination class of G1M, G2M, GM1, GM2, M1 or M2 (only the full portion will be renewed online)<br>
+        You haven’t updated your address within the last 90 days<br>
+        You don’t need tests (vision, written, or road)<br>
+        You’re not removing a vision condition<br>
+        You have no new medical conditions that may prevent you from driving<br>
+        You don’t have outstanding fines<br>
+        <br>
+        To renew online, you need:<br>
+        Your driver’s licence number<br>
+        the 7-digit trillium number found on your driver’s licence (e.g., *1234567*)<br>
+        Your postal code
+      </div>
+  </mat-carousel-slide>
+
+  <mat-carousel-slide>
+    <div class="how-it-works-header">How it works</div>
+    <div class="how-it-works-sub-header">Renewing your Driver’s Licence</div>
+    <div class="reniew-criteria">You can renew your driver’s licence online if:</div>
+    <div class="renew-criteria-list">
+      You don’t need a new photo (you must take a new photo every 10 years)<br>
+      You have a full licence (G, M class) that isn’t cancelled, suspended, or expired for more than 12 months<br>
+      You have a combination class of G1M, G2M, GM1, GM2, M1 or M2 (only the full portion will be renewed online)<br>
+      You haven’t updated your address within the last 90 days<br>
+      You don’t need tests (vision, written, or road)<br>
+      You’re not removing a vision condition<br>
+      You have no new medical conditions that may prevent you from driving<br>
+      You don’t have outstanding fines<br>
+      <br>
+      To renew online, you need:<br>
+      Your driver’s licence number<br>
+      the 7-digit trillium number found on your driver’s licence (e.g., *1234567*)<br>
+      Your postal code
+    </div>
+  </mat-carousel-slide>
+
+</mat-carousel>
+</div>

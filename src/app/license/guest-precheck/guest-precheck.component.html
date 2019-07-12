@@ -1,0 +1,50 @@
+<mat-card>
+
+    <form [formGroup]="guestForm" (submit)="submitForm()">
+  
+      <mat-card-content fxLayout="column">
+  
+        <mat-form-field>
+          <input matInput [textMask]="{mask: dlMask}" placeholder="Driver License Number" formControlName="dlNumber" autofocus>
+          <mat-hint>A9999-99999-99999</mat-hint>
+          <!-- [textMask]="{mask: dlMask}"  -->
+          <mat-error *ngIf="dlNumber.hasError('required')">DL Number is required</mat-error>
+          <mat-error *ngIf="dlNumber.hasError('minlength')">Must be {{dlNumber['errors'].minlength.requiredLength}} characters</mat-error>
+  
+          <!-- <mat-error *ngIf="dlNumber.hasError('pattern')">{{dlNumber['errors'] | json}}</mat-error> -->
+        </mat-form-field>
+  
+        <mat-form-field>
+          <input matInput placeholder="Triullium Number" formControlName="triulliumNumber">
+          <mat-error *ngIf="triulliumNumber.hasError('required')">Trillium Number is required</mat-error>
+          <mat-error *ngIf="triulliumNumber.hasError('minlength')">Must be {{triulliumNumber['errors'].minlength.requiredLength}} characters long</mat-error>
+          <mat-error *ngIf="triulliumNumber.hasError('mmaxlength')">Must be {{triulliumNumber['errors'].maxlength.requiredLength}} characters long</mat-error>
+        </mat-form-field>
+  
+        <mat-form-field>
+          <input matInput placeholder="Postal Code" formControlName="postalCode">
+          <mat-error *ngIf="postalCode.hasError('required')">Postal Code is required</mat-error>
+          <mat-error *ngIf="postalCode.hasError('minlength')">Must be {{triulliumNumber['errors'].minlength.requiredLength}}</mat-error>
+        </mat-form-field>
+  
+        <mat-form-field fxLayout="row">
+          <input matInput placeholder="Date of Birth" formControlName="dob" [matDatepicker]="dobDatepicker">
+          <mat-datepicker-toggle matSuffix [for]="dobDatepicker"></mat-datepicker-toggle>
+          <mat-datepicker #dobDatepicker></mat-datepicker>
+        </mat-form-field>
+  
+      </mat-card-content>
+  
+  
+      <mat-card-actions>
+  
+          <button type="submit" color="accent" mat-raised-button [disabled]="!guestForm.valid || ! (onlineService.online$ | async)">CHECK ELIGIBILITY</button>
+  
+      </mat-card-actions>
+  
+  
+    </form>
+  
+  
+  </mat-card>
+  

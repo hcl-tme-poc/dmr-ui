@@ -1,0 +1,122 @@
+mat-card {
+    min-width: 100%;
+}
+
+.mat-card:not([class*=mat-elevation-z]) {
+    box-shadow: 0 0px 0px -1px rgba(0,0,0,0), 
+                0 0px 0px 0 rgba(0,0,0,0), 
+                0 0px 0px 0 rgba(0,0,0,0);
+}
+
+  
+.title-card-left{
+    display: inline;
+}
+
+mat-form-field {
+    width: 600px;
+}
+
+mat-card-actions {
+    text-align: center;
+}
+
+.error {
+    color: red;
+}
+
+.remember-me {
+    padding-top: 20px;
+}
+
+.Ministry-of-Transpor {
+    width: 306px;
+    height: 33px;
+    font-family: OpenSans;
+    font-size: 24px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #616161;
+    padding-right: 400px
+}
+.Welcome-to-the-Self {
+    width: 683px;
+    height: 55px;
+    font-family: OpenSans;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #616161;
+    padding-right: 400px
+  }
+
+  .Login-to-your-accoun {
+    width: 293px;
+    height: 38px;
+    font-family: OpenSans;
+    font-size: 28px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #616161;
+    padding-right: 400px
+  }
+
+  input {
+      font-size: 16px;
+  }
+
+  .Password {
+    width: 72px;
+    height: 24px;
+    font-family: OpenSans;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #616161;
+    padding-right: 200px
+  }
+  
+  .Remember-Me {
+    height: 24px;
+    font-family: OpenSans;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #616161;
+    padding-right: 950px
+  }
+  
+  .Forgot-Password {
+    width: 152px;
+    height: 24px;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--peacock-blue);
+  }
+
+  
+  button {
+      padding: 0 5px 0 5px;
+      /* width: 120;
+      font-size: 20px; */
+  }

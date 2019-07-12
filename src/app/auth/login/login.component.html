@@ -1,0 +1,62 @@
+<mat-card>
+
+  <form fxLayout="column" fxLayoutAlign="center center" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+    <mat-card-content fxLayout="column">
+
+      <div class="Ministry-of-Transpor">Ministry of Transportation</div>
+      <div fxShow fxHide.lt-md class="Welcome-to-the-Self">Welcome to the Self Service Portal</div>
+      <br/>
+      <div class="Login-to-your-accoun">Login to your account</div>
+
+      <mat-form-field>
+
+        <input matInput placeholder="Username" formControlName="loginId">
+
+        <mat-error *ngIf="loginIdControl.hasError('required')">
+          Login Id is required
+        </mat-error>
+        <mat-error *ngIf="loginIdControl.hasError('minlength')">
+            Please enter a valid email address/phone number
+        </mat-error>
+
+      </mat-form-field>
+
+
+      <mat-form-field>
+
+        <input type="password" matInput placeholder="Password" formControlName="password">
+
+        <mat-error *ngIf="passwordControl.hasError('required')">
+          Please enter password
+        </mat-error>
+        <mat-error *ngIf="passwordControl.hasError('minlength')">
+          Must be at least {{passwordControl.errors['minlength'].requiredLength}}. 
+          Entered {{passwordControl.errors['minlength'].actualLength}}
+        </mat-error>
+
+      </mat-form-field>
+
+      <div class="error">
+        {{loginErrorMessage}}
+      </div>
+
+    </mat-card-content>
+
+    <mat-card-actions>
+
+        <button mat-stroked-button color="primary" [disabled]="true">REGISTER</button>&nbsp;&nbsp;
+
+        <button type="submit" color="accent" mat-flat-button [disabled]="!loginForm.valid">LOGIN</button>
+
+      <div>
+        <mat-checkbox class="Remember-Me">Remember Me</mat-checkbox>
+        <!--a href="/login">Forgot Password</a-->
+      </div>
+      
+
+    </mat-card-actions>
+
+  </form>
+
+</mat-card>

@@ -1,0 +1,36 @@
+:host {
+    min-height: calc(100vh - 300px);
+}
+
+h4 {
+    font-size: 18px;
+}
+
+.precheck-message {
+    font-family: OpenSans;
+    font-size: 24px;
+    font-weight: 600;
+    color: #01579b;
+    padding-top: 20px;
+}
+
+.precheck-message-mob {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 600;
+    color: #01579b;
+    padding-top: 20px;
+}
+
+.card-title {
+    font-family: OpenSans;
+    font-size: 38px;
+    font-weight: bold;
+    color: #616161;
+}
+.card-title-mob {
+    font-family: Roboto;
+    font-size: 28px;
+    font-weight: bold;
+    color: #616161;
+}

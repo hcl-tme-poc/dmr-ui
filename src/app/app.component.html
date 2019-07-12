@@ -1,0 +1,102 @@
+<div fxLayout="column" fxLayoutAlign="top center">
+
+  <div class="subheader" fxShow fxHide.lt-md fxLayout="row" fxLayoutAlign="start center">
+
+    <img id="header-logo" src="assets/images/OMT-Logo_White.png" fxFlexOffset="128px" alt="Ontario Ministry of Transportation">
+
+    <div fxFlex></div>
+
+    <div class="franch">français</div>
+
+    <div *ngIf="loginService.currentUser" class="loggedin-user" fxLayout="row" fxLayoutAlign="center center">
+      <mat-icon>account_circle</mat-icon>
+      <div>{{loginService.currentUser.firstName}}</div>
+    </div>
+
+    <button i18n mat-button *ngIf="! loginService.currentUser" class="loggedin-user" style="text-decoration: none;" routerLink="/login" style="padding-right: calc(128px - 16px);">Login</button>
+    <button i18n mat-button *ngIf="loginService.currentUser" class="loggedin-user" style="text-decoration: none;" (click)="doLogout()" style="padding-right: calc(128px - 16px);">Logout</button>
+
+  </div>
+
+
+  <mat-toolbar role="heading" color="primary" fxFlexFill fxLayout="row" [class.offline]="! onlineService.online">
+
+    <div class="header-title" fxHide fxShow.lt-md>Ministry of Transportation</div>
+
+    <div fxFlex fxHide fxShow.lt-md></div>
+
+    <div fxShow fxHide.lt-md style="padding-left: calc(128px - 16px);">
+
+      <button i18n class="menu-item" style="text-decoration: none;" mat-button routerLink="/home" routerLinkActive="active">HOME</button>
+
+      <button i18n class="menu-item" style="text-decoration: none;" mat-button routerLink="/not-implemented" routerLinkActive="active">DRIVING AND ROADS</button>
+
+      <button i18n class="menu-item" style="text-decoration: none;" mat-button routerLink="/registration" routerLinkActive="active">VEHICLE REGISTRATION</button>
+      
+      <!--button i18n class="menu-item" style="text-decoration: none;" mat-button (click)="goToDl()" [class.active]="router.url.startsWith('/license-eligibility')">RENEW LICENCE</button-->
+
+      <button i18n class="menu-item" style="text-decoration: none;" mat-button routerLink="/not-implemented" routerLinkActive="active">RCTC</button>
+
+      <button i18n class="menu-item" style="text-decoration: none;" mat-button routerLink="/not-implemented" routerLinkActive="active">HEALTH CARD</button>
+
+    </div>
+
+
+    <div *ngIf="loginService.currentUser" class="userName" fxLayout="row" 
+    fxLayoutAlign="center center" fxHide fxShow.lt-md>
+      <mat-icon>account_circle</mat-icon>
+      <div>{{loginService.currentUser.firstName}}</div>
+    </div>
+
+    <button mat-icon-button fxHide fxShow.lt-md [matMenuTriggerFor]="menu" 
+              aria-label="Example icon-button with a menu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item routerLink="/home" routerLinkActive="active">
+        <mat-icon>home</mat-icon>
+        <span>Home</span>
+      </button>
+      <button mat-menu-item (click)="goToDl()" [class.active]="router.url.startsWith('/license-eligibility')">
+        <mat-icon>directions_car</mat-icon>
+        <span>Renew Licence</span>
+      </button>
+      <button mat-menu-item routerLink="/registration" routerLinkActive="active">
+        <mat-icon>bar_chart</mat-icon>
+        <span>Registrations</span>
+      </button>
+      <button mat-menu-item *ngIf="! loginService.currentUser" (click)="doLogin()" routerLinkActive="active">
+        <mat-icon></mat-icon>
+        <span>Login</span>
+      </button>
+      <button mat-menu-item *ngIf="loginService.currentUser" (click)="doLogout()" routerLinkActive="active">
+        <mat-icon></mat-icon>
+        <span>Logout</span>
+      </button>
+    </mat-menu>
+
+
+  </mat-toolbar>
+
+<router-outlet></router-outlet>
+
+<!-- id="footer" class="footer" -->
+<div class="footer"  fxFlexFill fxLayout="row" fxLayoutAlign="start center">
+
+  <img id="footer-logo" src="assets/images/OMT-Logo_White.png" fxFlexOffset="20px">
+
+  <div fxFlex></div>
+
+  <a mat-menu-item ngClass.gt-sm="footer-menu-item" ngClass.lt-md="footer-menu-item-mob" fxShow fxHide.lt-md routerLink="/about-ontario">About Ontario</a>
+
+  <a mat-menu-item ngClass.gt-sm="footer-menu-item" ngClass.lt-md="footer-menu-item-mob" routerLink="/accessibility">Accessibility</a>
+
+  <a mat-menu-item ngClass.gt-sm="footer-menu-item" ngClass.lt-md="footer-menu-item-mob" fxShow fxHide.lt-md routerLink="/news">News</a>
+
+  <a mat-menu-item ngClass.gt-sm="footer-menu-item" ngClass.lt-md="footer-menu-item-mob"routerLink="/privacy">Privacy</a>
+
+  <a mat-menu-item ngClass.gt-sm="footer-menu-item" ngClass.lt-md="footer-menu-item-mob" routerLink="/terms-of-use">Terms of Use</a>
+</div>
+
+</div>

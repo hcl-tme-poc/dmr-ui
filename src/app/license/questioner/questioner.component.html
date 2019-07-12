@@ -1,0 +1,76 @@
+<mat-card>
+
+    <form [formGroup]="questionerForm" (submit)="submitForm()">
+  
+        <mat-card-content fxLayout="column">
+  
+          <mat-radio-group id="musclePainGroup" formControlName="musclePain" fxLayout="column">
+            <div fxLayout="row" fxLayoutAlign="start center">
+              <label ngClass.gt-sm="question-label" ngClass.lt-md="question-label-mob">Did you expereince any muscle pain in last one year which affects your ability to drive safely?</label>
+              <mat-icon matTooltip="You need to visit MTO for Medical-chekup." class="help-icon">help</mat-icon>
+            </div>
+            <mat-radio-button value="Yes"><span class="question-option">Yes</span>
+              <!-- <span class="question-description">* You need to visit MTO for Medical-chekup.</span> -->
+            </mat-radio-button>
+            <mat-radio-button value="No"><span class="question-option">No</span></mat-radio-button>
+          </mat-radio-group>
+  
+          <mat-radio-group formControlName="eye" fxLayout="column">
+            <div fxLayout="row" fxLayoutAlign="start center">
+              <label ngClass.gt-sm="question-label" ngClass.lt-md="question-label-mob">Is there any update in the eye vision condition?</label>
+              <mat-icon matTooltip="You need to visit MTO for eye vision test." class="help-icon">help</mat-icon>
+            </div>
+            <mat-radio-button value="Yes"><span class="question-option">Yes</span> <!--span class="question-description">* You need to visit MTO for eye vision test.</span --></mat-radio-button>
+            <mat-radio-button value="No"><span class="question-option">No</span></mat-radio-button>
+          </mat-radio-group>
+  
+          <mat-radio-group formControlName="poorDriving" fxLayout="column">
+            <div fxLayout="row" fxLayoutAlign="start center">
+              <label ngClass.gt-sm="question-label" ngClass.lt-md="question-label-mob">Have you been reported as poor driving habits or charged more than twice in last 1 year?</label>
+              <mat-icon matTooltip="You need to visit MTO with chargeable action." class="help-icon">help</mat-icon>
+            </div>
+            <mat-radio-button fxLayout="row" value="Yes"><span class="question-option">Yes</span> <!-- span class="question-description">* You need to visit MTO with chargeable action.</span --></mat-radio-button>
+            <mat-radio-button value="No"><span class="question-option">No</span></mat-radio-button>
+          </mat-radio-group>
+  
+          <mat-radio-group formControlName="cardiacProblem" fxLayout="column">
+            <div fxLayout="row" fxLayoutAlign="start center">
+              <label ngClass.gt-sm="question-label" ngClass.lt-md="question-label-mob">Did you expereince any cardiac problems causing of consciousness in last 1 year and visited doctor?</label>
+              <mat-icon matTooltip="You need to visit MTO with medical report." class="help-icon">help</mat-icon>
+            </div>
+            <mat-radio-button value="Yes"><span class="question-option">Yes</span> <!-- span class="question-description">* You need to visit MTO with medical report.</span --></mat-radio-button>
+            <mat-radio-button value="No"><span class="question-option">No</span></mat-radio-button>
+          </mat-radio-group>
+  
+          <mat-radio-group formControlName="respiratoryProblem" fxLayout="column">
+            <div fxLayout="row" fxLayoutAlign="start center">
+              <label ngClass.gt-sm="question-label" ngClass.lt-md="question-label-mob">Did you face any respiratory problems causing shortness of breath in last 1 year?</label>
+              <mat-icon matTooltip="You need to visit MTO for medical chekup." class="help-icon">help</mat-icon>
+            </div>
+            <mat-radio-button value="Yes"><span class="question-option">Yes</span> <!-- span class="question-description">* You need to visit MTO for medical chekup.</span --></mat-radio-button>
+            <mat-radio-button value="No"><span class="question-option">No</span></mat-radio-button>
+          </mat-radio-group>
+  
+          <mat-radio-group formControlName="hospitalized" fxLayout="column">
+            <div fxLayout="row" fxLayoutAlign="start center">
+              <label ngClass.gt-sm="question-label" ngClass.lt-md="question-label-mob">Have you been hospitalized in last 2 years due to an accident?</label>
+              <mat-icon matTooltip="You need to visit MTO for accident case report." class="help-icon">help</mat-icon>
+            </div>
+            <!-- <label ngClass.gt-sm="question-label" ngClass.lt-md="question-label-mob">Have you been hospitalized in last 2 years due to an accident?</label> -->
+            <mat-radio-button value="Yes"><span class="question-option">Yes</span> <!-- span class="question-description">* You need to visit MTO for accident case report.</span --></mat-radio-button>
+            <mat-radio-button value="No"><span class="question-option">No</span></mat-radio-button>
+          </mat-radio-group>
+  
+        </mat-card-content>
+  
+        <mat-card-actions>
+  
+            <button type="submit" color="accent" mat-raised-button [disabled]="!questionerForm.valid">SUBMIT</button>
+    
+        </mat-card-actions>
+  
+    </form>
+  
+    <!-- {{ questionerForm.value | json }} -->
+  
+  </mat-card>
