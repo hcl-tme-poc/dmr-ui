@@ -1,3 +1,15 @@
+/* open-sans-regular - latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    src: url('../../../assets/fonts/open-sans-v16-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Open Sans Regular'), local('OpenSans-Regular'),
+         url('../../../assets/fonts/open-sans-v16-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../../../assets/fonts/open-sans-v16-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../../../assets/fonts/open-sans-v16-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../../../assets/fonts/open-sans-v16-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../../../assets/fonts/open-sans-v16-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+  }
 :host {
     min-height: calc(100vh - 300px);
 }

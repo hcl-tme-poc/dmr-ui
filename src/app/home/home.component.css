@@ -1,3 +1,16 @@
+/* open-sans-regular - latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    src: url('../../assets/fonts/open-sans-v16-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Open Sans Regular'), local('OpenSans-Regular'),
+         url('../../assets/fonts/open-sans-v16-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../../assets/fonts/open-sans-v16-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../../assets/fonts/open-sans-v16-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../../assets/fonts/open-sans-v16-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../../assets/fonts/open-sans-v16-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+  }
+
 :host {
     width: 100%;
 }
@@ -36,7 +49,7 @@ mat-card-title {
 }
 
 .content-header {
-    font-family: OpenSans;
+    font-family: 'Open Sans', sans-serif;
     font-size: 24px;
     font-weight: 600;
     color: #616161;
@@ -44,20 +57,20 @@ mat-card-title {
 }
 
 .content-sub-header {
-    font-family: OpenSans;
+    font-family: 'Open Sans', sans-serif;
     font-size: 48px;
     font-weight: bold;
     color: #616161;
 }
 .content-sub-header-mob {
-    font-family: OpenSans;
+    font-family: 'Open Sans', sans-serif;
     font-size: 28px;
     font-weight: bold;
     color: #616161;
 }
 
 .content-sub-header-2 {
-    font-family: OpenSans;
+    font-family: 'Open Sans', sans-serif;
     font-size: 34px;
     font-weight: 600;
     color: #616161;
@@ -65,7 +78,7 @@ mat-card-title {
 }
 
 .notifications {
-    font-family: OpenSans;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: 600;
     color: #01579b;
@@ -81,7 +94,7 @@ mat-divider:first-of-type {
 }
 
 .time-to-renew {
-    font-family: OpenSans;
+    font-family: 'Open Sans', sans-serif;
     font-size: 24px;
     font-weight: bold;
     color: #01579b;
@@ -89,13 +102,13 @@ mat-divider:first-of-type {
 }
 
 .license-renew-date {
-    font-family: OpenSans;
+    font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     color:  #01579b;
 }
 
 .get-started {
-    font-family: OpenSans;
+    font-family: 'Open Sans', sans-serif;
     font-size: 34px;
     font-weight: bold;
     color: #616161;
@@ -103,7 +116,7 @@ mat-divider:first-of-type {
     padding-bottom: 16px;
 }
 .get-started-mob {
-    font-family: OpenSans;
+    font-family: 'Open Sans', sans-serif;
     font-size: 34px;
     font-weight: bold;
     color: #616161;
@@ -118,7 +131,7 @@ mat-divider:first-of-type {
 .option-link-ancor {
     padding-left: 20px;
     color: #01579b;
-    font-family: OpenSans;
+    font-family: 'Open Sans', sans-serif;
     font-size: 24px;
     font-weight: bold;
 }
@@ -156,7 +169,7 @@ button[mat-fab] mat-icon {
 .how-it-works-header {
     padding-left: 128px;
     padding-right: 128px;
-    font-family: OpenSans;
+    font-family: 'Open Sans', sans-serif;
     font-size: 24px;
     padding-top: 10px;
     line-height: 1.6;
@@ -166,7 +179,7 @@ button[mat-fab] mat-icon {
 .how-it-works-sub-header {
     padding-left: 128px;
     padding-right: 128px;
-    font-family: OpenSans;
+    font-family: 'Open Sans', sans-serif;
     font-size: 48px;
     font-weight: 600;
 }
@@ -174,7 +187,7 @@ button[mat-fab] mat-icon {
 .reniew-criteria {
     padding-left: 128px;
     padding-right: 128px;
-    font-family: OpenSans;
+    font-family: 'Open Sans', sans-serif;
     font-size: 34px;
     padding-top: 15px;
 }
@@ -183,7 +196,7 @@ button[mat-fab] mat-icon {
     padding-left: 128px;
     padding-right: 128px;
     padding-bottom: 10px;
-    font-family: OpenSans;
+    font-family: 'Open Sans', sans-serif;
     font-size: 22px;
     padding-top: 10px;
     line-height: 1.6;

@@ -1,3 +1,16 @@
+/* open-sans-regular - latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    src: url('../../../assets/fonts/open-sans-v16-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Open Sans Regular'), local('OpenSans-Regular'),
+         url('../../../assets/fonts/open-sans-v16-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../../../assets/fonts/open-sans-v16-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../../../assets/fonts/open-sans-v16-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../../../assets/fonts/open-sans-v16-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../../../assets/fonts/open-sans-v16-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+
 mat-card {
     min-width: 100%;
 }
@@ -32,7 +45,7 @@ mat-card-actions {
 .Ministry-of-Transpor {
     width: 306px;
     height: 33px;
-    font-family: OpenSans;
+    font-family: 'Open Sans', sans-serif;
     font-size: 24px;
     font-weight: 600;
     font-style: normal;
@@ -45,7 +58,7 @@ mat-card-actions {
 .Welcome-to-the-Self {
     width: 683px;
     height: 55px;
-    font-family: OpenSans;
+    font-family: 'Open Sans', sans-serif;
     font-size: 40px;
     font-weight: bold;
     font-style: normal;
@@ -59,7 +72,7 @@ mat-card-actions {
   .Login-to-your-accoun {
     width: 293px;
     height: 38px;
-    font-family: OpenSans;
+    font-family: 'Open Sans', sans-serif;
     font-size: 28px;
     font-weight: 600;
     font-style: normal;
@@ -77,7 +90,7 @@ mat-card-actions {
   .Password {
     width: 72px;
     height: 24px;
-    font-family: OpenSans;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: normal;
     font-style: normal;
@@ -90,7 +103,7 @@ mat-card-actions {
   
   .Remember-Me {
     height: 24px;
-    font-family: OpenSans;
+    font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     font-weight: normal;
     font-style: normal;
