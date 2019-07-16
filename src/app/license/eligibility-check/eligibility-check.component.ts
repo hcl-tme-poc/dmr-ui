@@ -61,13 +61,12 @@ export class EligibilityCheckComponent implements OnInit {
 
       this.precheckMessage = res as EligibilityCheckResponse;
 
-      this.preEligible = this.precheckMessage.message === 'Eligible for License Renewal';
+      this.preEligible = this.precheckMessage.message === 'You are eligible to renew your driver’s license';
 
       this.componentState['driverLicenseNumber'] = event.dlNumber;
       this.componentState['trilliumNumber'] = event.triulliumNumber;
       this.componentState['postalCode'] = event.postalCode;
       this.componentState['dob'] = event.dob;
-
     });
 
   }
