@@ -31,18 +31,7 @@ export class AppComponent {
 
 
   doLogin() {
-
-    this.dialog.open(LoginService).afterClosed().subscribe(response => {
-
-      if(response) {
-        localStorage.setItem('userToken', JSON.stringify(response));
-        this.loginService.setCurrentUser(response);
-        this.router.navigate(['/home']);
-      } else {
-        this.doLogout();
-      }
-    });
-
+    this.router.navigate(['/login']);
   }
 
   doLogout() {

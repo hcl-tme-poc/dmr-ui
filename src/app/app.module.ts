@@ -20,7 +20,6 @@ import { environment } from '../environments/environment';
 import { LoginComponent } from './auth/login/login.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import { NotImplementedComponent } from './not-implemented/not-implemented.component';
-import { LicenseComponent } from './license/license.component';
 import { EligibilityCheckComponent } from './license/eligibility-check/eligibility-check.component';
 import { GuestPrecheckComponent } from './license/guest-precheck/guest-precheck.component';
 import { QuestionerComponent } from './license/questioner/questioner.component';
@@ -34,7 +33,6 @@ import { ReportComponent } from './license/report/report.component';
     LoginComponent,
     SignupComponent,
     NotImplementedComponent,
-    LicenseComponent,
     EligibilityCheckComponent,
     GuestPrecheckComponent,
     QuestionerComponent,
