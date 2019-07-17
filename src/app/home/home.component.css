@@ -26,7 +26,7 @@
 }
 
 .banner {
-    height: 230px;
+    height: 160px;
     width: 100%;
     background-image: url("../../assets/images/home_banner.png");
     padding: 0 !important;
@@ -53,7 +53,7 @@ mat-card-title {
     font-size: 24px;
     font-weight: 600;
     color: #616161;
-    padding-top: 56px;
+    padding-top: 20px;
 }
 
 .content-sub-header {
@@ -74,7 +74,7 @@ mat-card-title {
     font-size: 34px;
     font-weight: 600;
     color: #616161;
-    padding-top: 28px;
+    padding-top: 20px;
 }
 
 .notifications {
@@ -82,7 +82,7 @@ mat-card-title {
     font-size: 16px;
     font-weight: 600;
     color: #01579b;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 mat-divider {
@@ -112,7 +112,7 @@ mat-divider:first-of-type {
     font-size: 34px;
     font-weight: bold;
     color: #616161;
-    padding-top: 60px;
+    padding-top: 40px;
     padding-bottom: 16px;
 }
 .get-started-mob {
@@ -180,7 +180,7 @@ button[mat-fab] mat-icon {
     padding-left: 128px;
     padding-right: 128px;
     font-family: 'Open Sans', sans-serif;
-    font-size: 48px;
+    font-size: 32px;
     font-weight: 600;
 }
 
@@ -188,7 +188,7 @@ button[mat-fab] mat-icon {
     padding-left: 128px;
     padding-right: 128px;
     font-family: 'Open Sans', sans-serif;
-    font-size: 34px;
+    font-size: 22px;
     padding-top: 15px;
 }
 
@@ -197,7 +197,7 @@ button[mat-fab] mat-icon {
     padding-right: 128px;
     padding-bottom: 10px;
     font-family: 'Open Sans', sans-serif;
-    font-size: 22px;
+    font-size: 18px;
     padding-top: 10px;
     line-height: 1.6;
     font-weight: 50;
