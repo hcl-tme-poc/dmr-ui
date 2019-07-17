@@ -1,7 +1,7 @@
-<mat-card fxLayout="column wrap">
+<mat-card fxLayout="column wrap" fxLayoutAlign="start start">
 
   <mat-card-header>
-    <mat-card-title>
+    <mat-card-title style="padding-left:110px">
       <div class="Ministry-of-Transpor">Ministry of Transportation</div>
       <div fxShow fxHide.lt-md class="Welcome-to-the-Self">Welcome to the Self Service Portal</div>
       <div fxShow fxHide.lt-md class="Login-to-your-accoun">Login to your account</div>
@@ -10,7 +10,7 @@
 
   <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
 
-    <mat-card-content fxLayout="column wrap" fxLayoutAlign="start start start" style="padding-left:15px">
+    <mat-card-content fxLayout="column wrap" fxLayoutAlign="start start" style="padding-left:125px">
       <mat-form-field>
         <input matInput placeholder="Username" formControlName="loginId">
         <mat-error *ngIf="loginIdControl.hasError('required')">Login Id is required</mat-error>
@@ -31,13 +31,13 @@
       </div>
     </mat-card-content>
 
-    <mat-card-actions fxLayoutGap="10px">
+    <mat-card-actions fxLayoutAlign="flex-end" fxLayoutGap="30px">
       <button mat-stroked-button color="primary" [disabled]="true">REGISTER</button>
-      <button type="submit" color="accent" mat-flat-button [disabled]="!loginForm.valid">&nbsp;LOGIN&nbsp;</button>
+      <button type="submit" color="accent" mat-flat-button [disabled]="!loginForm.valid">&nbsp;&nbsp;LOGIN&nbsp;&nbsp;</button>
     </mat-card-actions>
-    <div fxLayoutGap="340px">
+    <div fxLayoutAlign="flex-start" fxLayoutGap="315px" style="padding-left:110px">
       <mat-checkbox class="Remember-Me">Remember Me</mat-checkbox>
-      <a href="#/not-implemented">Forgot Password</a>
+      <a href="#/not-implemented" class="Forgot-Password">Forgot Password</a>
     </div>
   </form>
   <div>&nbsp;</div>

@@ -11,8 +11,8 @@
          url('../../../assets/fonts/open-sans-v16-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
 }
 
-mat-card {
-    min-width: 100%;
+:host {
+    width: 100%;
 }
 
 .mat-card:not([class*=mat-elevation-z]) {
@@ -21,9 +21,8 @@ mat-card {
                 0 0px 0px 0 rgba(0,0,0,0);
 }
 
-  
-.title-card-left{
-    display: inline;
+mat-card {
+    min-width: 100%;
 }
 
 mat-form-field {
@@ -55,6 +54,7 @@ mat-card-actions {
     color: #616161;
     padding-right: 400px
 }
+
 .Welcome-to-the-Self {
     width: 683px;
     height: 55px;
@@ -69,7 +69,7 @@ mat-card-actions {
     padding-right: 400px
   }
 
-  .Login-to-your-accoun {
+.Login-to-your-accoun {
     width: 293px;
     height: 38px;
     font-family: 'Open Sans', sans-serif;
@@ -80,55 +80,51 @@ mat-card-actions {
     line-height: normal;
     letter-spacing: normal;
     color: #616161;
-    padding-right: 400px
   }
 
-  input {
-      font-size: 16px;
-  }
-
-  .Password {
-    width: 72px;
-    height: 24px;
-    font-family: 'Open Sans', sans-serif;
+input {
     font-size: 16px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    color: #616161;
-    padding-right: 200px
-  }
-  
-  .Remember-Me {
-    width: 131px;
-    height: 24px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #616161;
-    padding-left: 15px
-  }
-  
-  .Forgot-Password {
-    height: 24px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color:inherit;
-    text-decoration: none;
-  }
+}
 
-  
-  button {
-      padding: 0 5px 0 5px;
-  }
+.Password {
+  width: 72px;
+  height: 24px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #616161;
+  padding-right: 200px
+}
+
+.Remember-Me {
+  width: 131px;
+  height: 24px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #616161;
+  padding-left: 15px
+}
+
+.Forgot-Password {
+  height: 24px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+button {
+    padding: 0 5px 0 5px;
+}
