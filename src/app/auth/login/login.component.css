@@ -85,6 +85,14 @@ iPad 3
     mat-form-field {
         width: 300px;
     }
+
+    .cardContent{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        padding-left:125px
+    }
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
@@ -92,6 +100,15 @@ iPad 3
     mat-form-field {
         width: 300px;
     }
+
+    .cardContent{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        padding-left:125px
+    }
+    
 }
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1224px) {
@@ -99,6 +116,11 @@ iPad 3
     mat-form-field {
         width: 600px;
     }
+
+    .cardTitle{
+        padding-left:110px;
+    }
+
     .cardContent{
         display:flex;
         flex-direction: column;
@@ -214,9 +236,13 @@ iPad 3
 
 /* iPhone X ----------- */
 @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
-/* Styles */
+    /* Styles */
     mat-form-field {
         width: 300px;
+    }
+
+    .cardTitle{
+      padding-left:50px;
     }
 
     .cardActions {
@@ -281,6 +307,10 @@ iPad 3
 /* Styles */
 }
     
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
+
 .error {
     color: red;
 }
@@ -329,10 +359,6 @@ input {
   color: #616161;
   padding-right: 200px
 }
-
-
-
-
 
 button {
     padding: 0 5px 0 5px;
