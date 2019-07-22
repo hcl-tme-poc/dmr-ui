@@ -34,7 +34,7 @@
 
   <div id="allOptionLinks" fxLayout="row wrap" fxLayoutAlign="start start" fxLayoutGap="10px" fxFlexFill>
 
-   <ng-container *ngIf="loginService?.currentUser?.firstName == 'Alex' || loginService?.currentUser?.firstName == 'John'">
+   <ng-container *ngIf="loginService.currentUser">
     <div routerLink="/renew-eligible" class="option-link" fxFlex="50px 0 330px;" fxLayout="row" fxLayoutAlign="start center">
       <button mat-fab fxShow fxHide.lt-md>
         <mat-icon>credit_card</mat-icon>
@@ -48,7 +48,7 @@
     </div>
   </ng-container>
 
-  <ng-container *ngIf="loginService?.currentUser?.firstName != 'Alex' || loginService?.currentUser?.firstName != 'John'">
+  <ng-container *ngIf="! loginService.currentUser">
     <div routerLink="/license-eligibility" class="option-link" fxFlex="50px 0 330px;" fxLayout="row" fxLayoutAlign="start center">
       <button mat-fab fxShow fxHide.lt-md>
         <mat-icon>credit_card</mat-icon>
