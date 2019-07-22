@@ -15,7 +15,7 @@ export class EligibilityCheckComponent implements OnInit {
 
   preEligible: boolean = false;  // true if first 4 values make user eligible
 
-  componentState: UserEligibilityState | {pricheck: boolean};
+  componentState: UserEligibilityState | {precheck: boolean};
 
   currentUser: UserModel | {} = {};
 
@@ -28,11 +28,11 @@ export class EligibilityCheckComponent implements OnInit {
 
     this.route.paramMap.pipe(
       tap(val => {
-        // console.log(' ********** route.paramMap',  val['params'].pricheck);
+        // console.log(' ********** route.paramMap',  val['params'].precheck);
       })
     ).subscribe((params) => {
       this.componentState = params['params'];
-      this.componentState = {...this.componentState, pricheck: this.componentState.pricheck === 'true'}
+      this.componentState = {...this.componentState, precheck: this.componentState.precheck === 'true'}
     });
 
     this.loginService.currentUser$.subscribe(user => {
@@ -105,7 +105,7 @@ export class EligibilityCheckComponent implements OnInit {
 
   get showGuestPrecheck(): boolean {
 
-    return !this.componentState.pricheck;
+    return !this.componentState.precheck;
 
   }
 

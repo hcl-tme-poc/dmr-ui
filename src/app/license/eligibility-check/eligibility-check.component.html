@@ -6,7 +6,7 @@
     </mat-card-title>
 
     <mat-card-content>
-
+      {{currentUser.dob}}
       <app-guest-precheck *ngIf="showGuestPrecheck" 
           [driverLicenseNumber]="currentUser.driverLicenseNumber || componentState?.driverLicenseNumber"
           [trilliumNumber]="currentUser.trilliumNumber || componentState?.trilliumNumber"

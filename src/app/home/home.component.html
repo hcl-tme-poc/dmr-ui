@@ -24,7 +24,7 @@
 
     <div class="license-renew-date">
       Your Drivers Licence will expire on <i>24 July 2019</i>. 
-      <a class="license-renew-date" routerLink="/license-eligibility">Please renew your licence</a>
+      <a class="license-renew-date" routerLink="/renew-eligible">Please renew your licence</a>
     </div>
     <mat-divider></mat-divider>
 
@@ -34,6 +34,21 @@
 
   <div id="allOptionLinks" fxLayout="row wrap" fxLayoutAlign="start start" fxLayoutGap="10px" fxFlexFill>
 
+   <ng-container *ngIf="loginService?.currentUser?.firstName == 'Alex' || loginService?.currentUser?.firstName == 'John'">
+    <div routerLink="/renew-eligible" class="option-link" fxFlex="50px 0 330px;" fxLayout="row" fxLayoutAlign="start center">
+      <button mat-fab fxShow fxHide.lt-md>
+        <mat-icon>credit_card</mat-icon>
+      </button>
+      <button mat-mini-fab fxShow fxHide.gt-sm>
+        <mat-icon>credit_card</mat-icon>
+      </button>
+
+      <a ngClass.gt-sm="option-link-ancor" ngClass.lt-md="option-link-ancor-mob" fxFlexOffset="20px;">Renew your
+        Driver’s<br/>Licence</a>
+    </div>
+  </ng-container>
+
+  <ng-container *ngIf="loginService?.currentUser?.firstName != 'Alex' || loginService?.currentUser?.firstName != 'John'">
     <div routerLink="/license-eligibility" class="option-link" fxFlex="50px 0 330px;" fxLayout="row" fxLayoutAlign="start center">
       <button mat-fab fxShow fxHide.lt-md>
         <mat-icon>credit_card</mat-icon>
@@ -45,6 +60,7 @@
       <a ngClass.gt-sm="option-link-ancor" ngClass.lt-md="option-link-ancor-mob" fxFlexOffset="20px;">Renew your
         Driver’s<br/>Licence</a>
     </div>
+  </ng-container>
 
     <div routerLink="/registration" class="option-link" fxFlex="50px 0 330px;" fxLayout="row" fxLayoutAlign="start center">
       <button mat-fab fxShow fxHide.lt-md></button>

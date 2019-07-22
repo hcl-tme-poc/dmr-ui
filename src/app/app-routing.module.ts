@@ -7,7 +7,7 @@ import { SignupComponent } from './auth/signup/signup.component';
 import { NotImplementedComponent } from './not-implemented/not-implemented.component';
 import { EligibilityCheckComponent } from './license/eligibility-check/eligibility-check.component';
 import { ReportComponent } from './license/report/report.component';
-
+import { RenewUsersComponent } from './license/renew-users/renew-users.component';
 
 
 const routes: Routes = [
@@ -17,6 +17,7 @@ const routes: Routes = [
   { path: 'registration', component: NotImplementedComponent },
   { path: 'license-eligibility', component: EligibilityCheckComponent },
   { path: 'license-eligibility-report', component: ReportComponent },
+  { path: 'renew-eligible', component: RenewUsersComponent },
   
   { path: '',   redirectTo: '/home', pathMatch: 'full' },
   { path: '**', component: NotImplementedComponent }

@@ -22,7 +22,7 @@ export class EligibilityCheckService {
 
     const options = { params: new HttpParams().append('driverLicenseNumber', driverLicenseNumber)
             .append('trilliumNumber', trilliumNumber).append('postalCode', postalCode)
-            .append('dob', '04/05/1984') };
+            .append('dob', dob) };
 
     return this.http.post(URL, {}, options)
       .pipe(

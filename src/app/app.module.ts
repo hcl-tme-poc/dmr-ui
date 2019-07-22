@@ -24,6 +24,7 @@ import { EligibilityCheckComponent } from './license/eligibility-check/eligibili
 import { GuestPrecheckComponent } from './license/guest-precheck/guest-precheck.component';
 import { QuestionerComponent } from './license/questioner/questioner.component';
 import { ReportComponent } from './license/report/report.component';
+import { RenewUsersComponent } from './license/renew-users/renew-users.component';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { ReportComponent } from './license/report/report.component';
     EligibilityCheckComponent,
     GuestPrecheckComponent,
     QuestionerComponent,
-    ReportComponent
+    ReportComponent,
+    RenewUsersComponent
   ],
   imports: [
     BrowserModule,

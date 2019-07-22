@@ -18,5 +18,5 @@ export interface UserEligibilityState {
     trilliumNumber: string, 
     postalCode: string, 
     dob: string, 
-    pricheck: string | boolean
+    precheck: string | boolean
 }

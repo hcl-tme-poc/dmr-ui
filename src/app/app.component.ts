@@ -45,7 +45,7 @@ export class AppComponent {
     let checkEligibilityParams = {};
 
     if(this.loginService.currentUser) {
-      checkEligibilityParams = {...this.loginService.currentUser, pricheck: false};
+      checkEligibilityParams = {...this.loginService.currentUser, precheck: false};
       delete checkEligibilityParams['token'];
     }
 
