@@ -32,6 +32,8 @@ export class RenewUsersComponent implements OnInit {
     private route: ActivatedRoute, private router: Router) { }
 
   public ngOnInit() {
+    this.now = new Date();
+
     let checkEligibilityParams = {};
     this.preEligible = false;
     this.precheckMessage = undefined;

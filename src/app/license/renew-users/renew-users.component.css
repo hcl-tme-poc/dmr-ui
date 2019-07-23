@@ -1,0 +1,126 @@
+/* open-sans-regular - latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    src: url('../../../assets/fonts/open-sans-v16-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Open Sans Regular'), local('OpenSans-Regular'),
+         url('../../../assets/fonts/open-sans-v16-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../../../assets/fonts/open-sans-v16-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../../../assets/fonts/open-sans-v16-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../../../assets/fonts/open-sans-v16-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../../../assets/fonts/open-sans-v16-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+  }
+
+:host {
+    min-height: calc(100vh - 300px);
+    width: 100%;
+}
+
+.mat-card:not([class*=mat-elevation-z]) {
+    box-shadow: 0 0px 0px -1px rgba(0,0,0,0), 
+                0 0px 0px 0 rgba(0,0,0,0), 
+                0 0px 0px 0 rgba(0,0,0,0);
+}
+
+mat-card {
+    min-width: 100%;
+}
+
+.cardContent{
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding-left:125px
+}
+
+.mat-divider{
+    border-top-width: 2px;
+}
+  
+.Self-Service-Portal {
+    height: 33px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color:blue;
+    padding-left: 110px;
+  }
+  
+
+  .Renew-Drivers-Licen {
+    height: 33px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #616161;
+  }
+  
+  .Renew-Drivers-Licen1 {
+    width: 458px;
+    height: 55px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #616161;
+    padding-left: 110px;
+  }
+  
+  .text-header {
+    width: 233px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    color:blue;
+  }
+  
+  .text-data {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    color:blue;
+  }
+
+  .ELIGIBILITY {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color:blue;
+  }
+  
+
+  .You-are-eligible-to {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color:blue;
+  }
+  
