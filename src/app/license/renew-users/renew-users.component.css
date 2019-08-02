@@ -47,7 +47,7 @@ mat-card {
     font-stretch: normal;
     line-height: normal;
     letter-spacing: normal;
-    color:blue;
+    color: #01579b;
     padding-left: 110px;
   }
   
@@ -87,7 +87,7 @@ mat-card {
     font-stretch: normal;
     line-height: 2;
     letter-spacing: normal;
-    color:blue;
+    color: #01579b;
   }
   
   .text-data {
@@ -98,7 +98,7 @@ mat-card {
     font-stretch: normal;
     line-height: 2;
     letter-spacing: normal;
-    color:blue;
+    color: #01579b;
   }
 
   .ELIGIBILITY {
@@ -109,7 +109,7 @@ mat-card {
     font-stretch: normal;
     line-height: normal;
     letter-spacing: normal;
-    color:blue;
+    color: #01579b;
   }
   
 
@@ -121,6 +121,6 @@ mat-card {
     font-stretch: normal;
     line-height: normal;
     letter-spacing: normal;
-    color:blue;
+    color: #01579b;
   }
   
